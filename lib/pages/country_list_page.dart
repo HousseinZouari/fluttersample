@@ -40,11 +40,8 @@ class _CountryListPage extends State<CountryListPage> {
             ),
             child: TextField(
               controller: _controller,
-              onSubmitted: (value) {
-                /*if(value.isNotEmpty) {
+              onChanged: (value) {
                   vm.fetchCountries(value);
-                  _controller.clear();
-                }*/
               },
               style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
